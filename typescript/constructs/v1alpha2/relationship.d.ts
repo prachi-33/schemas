@@ -59,7 +59,7 @@ export type From = {
   kind?: string;
   model?: HttpsSchemasMesheryIoModelJson1;
   /**
-   * A valid semantic version string between 5 and 256 characters. The pattern allows for a major.minor.patch version followed by an optional pre-release tag like '-alpha' or '-beta.2' and an optional build metadata tag like '+build.1.
+   * Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1').
    */
   version?: string;
   match?: {
@@ -84,7 +84,7 @@ export type To = {
   kind?: string;
   model?: HttpsSchemasMesheryIoModelJson2;
   /**
-   * A valid semantic version string between 5 and 256 characters. The pattern allows for a major.minor.patch version followed by an optional pre-release tag like '-alpha' or '-beta.2' and an optional build metadata tag like '+build.1.
+   * Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1').
    */
   version?: string;
   match?: {
@@ -160,7 +160,7 @@ export interface HttpsSchemasMesheryIoRelationshipJson {
     /**
      * Selectors used to define relationships which are allowed.
      */
-    allow?: {
+    allow: {
       from: From;
       to: To;
       [k: string]: unknown;

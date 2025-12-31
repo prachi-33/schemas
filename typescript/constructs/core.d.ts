@@ -34,6 +34,13 @@ export type SemverString = string;
  */
 export type Uuid = string;
 /**
+ * Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1').
+ *
+ * This interface was referenced by `CoreJson`'s JSON-Schema
+ * via the `definition` "relationshipVersionString".
+ */
+export type RelationshipVersionString = string;
+/**
  * This interface was referenced by `CoreJson`'s JSON-Schema
  * via the `definition` "time".
  */

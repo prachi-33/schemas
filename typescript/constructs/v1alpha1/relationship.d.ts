@@ -9,7 +9,7 @@ export type From = {
   kind?: string;
   model?: string;
   /**
-   * API version of the object
+   * Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1').
    */
   version?: string;
   match?: {
@@ -34,7 +34,7 @@ export type To = {
   kind?: string;
   model?: string;
   /**
-   * API version of the object
+   * Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1').
    */
   version?: string;
   match?: {
