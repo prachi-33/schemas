@@ -36,7 +36,7 @@
     },
     "relationshipVersionString": {
       "type": "string",
-      "pattern": "^(>=|>)?v([0-9]+)(\\.[0-9]+)*(?:[.-][0-9A-Za-z-]+)*(?:\\+[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?$",
+      "pattern": "^(>=|>)?v(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:[.-][0-9A-Za-z]+)*$",
       "description": "Version string for Relationship selectors. Supports 'v1.2.3', '>v1.2.3', '>=v1.2.3', optional dot/dash suffixes (e.g. '-rc.1'), and optional build metadata (e.g. '+build.1')."
     },
     "time": {
